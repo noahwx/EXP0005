@@ -1,0 +1,223 @@
+@import url("https://use.typekit.net/cmp6nga.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: articulat-cf, sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: #FAF0CA;
+}
+
+.container {
+  position: relative;
+  top: 5vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  margin-bottom: 5vh;
+
+  height: auto;
+  width: 75vw;
+  
+  /* background-color: #222; */
+
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+  padding: 0.5em;
+
+  font-size: clamp(2rem, 4vw, 2rem);
+
+  color: #0D3B66;
+}
+
+.description {
+  position: relative;
+  margin-left: 1vw;
+
+  word-wrap: normal;
+  font-size: clamp(1.3rem, 2vw, 1.3rem);
+
+  color: inherit;
+}
+
+.footer {
+  position: relative;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.Navlink.active {
+  color: #F95738;
+}
+
+/* Nav Styles */
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 10vh;
+  width: 10vw;
+
+  padding: 1em;
+
+  transition: transform 500ms ease;
+}
+
+.Navlinks {
+  font-size: clamp(2rem, 4vw, 2rem);
+}
+
+.Navlink {
+  padding: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+
+  color: #0D3B66;
+
+  transition: opacity 500ms ease, color 500ms ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.Navlinks:hover > .Navlink {
+  opacity: 0.3;
+}
+
+.Navlinks:hover > .Navlink:hover {
+  opacity: 1;
+  color: #EE964B;
+  text-decoration: underline;
+}
+
+/* Home Styles */
+
+.QOD-container {
+  position: relative;
+  margin-left: 1vw;
+  margin-top: 2vh;
+
+  height: 40vh;
+  width: 35vw;
+}
+
+.QOD-description {
+  position: relative;
+  margin-left: 1vw;
+
+  word-wrap: normal;
+  font-size: clamp(1.5rem, 3vw, 1.5rem);
+
+  color: inherit;
+}
+
+.I-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin-top: 2vh;
+  margin-right: 1vw;
+
+  height: 40vh;
+  width: 35vw;
+
+  background-color: #F95738;
+
+  overflow: hidden;
+}
+
+.filter-container {
+  position: absolute;
+  top: 15vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  height: 20vh;
+  width: 33vw;
+}
+
+.J-container {
+  position: relative;
+  top: 5vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  margin-bottom: 5vh;
+
+  height: auto;
+  width: 75vw;
+
+  /* background-color: #F95738; */
+
+  overflow: hidden;
+}
+
+.job-container {
+  position: relative;
+  top: 1vh;
+  float: left;
+
+  margin: auto;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+
+  height: 20vh;
+  width: 70vw;
+
+  border-radius: 1em;
+
+  background-color: #0D3B66;
+
+  transition: transform 500ms ease;
+}
+
+.job-filter-container {
+  margin: auto;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+
+  height: 7vh;
+  width: 70vw;
+
+  color: #FAF0CA;
+
+  background-color: #0D3B66;
+}
+
+.job-title {
+  position: relative;
+  margin-top: 1vh;
+  margin-left: 1vw;
+
+  font-size: clamp(1.5rem, 3vw, 1.5rem);
+
+  color: #FAF0CA;
+}
+
+.job-container:hover {
+  transform: scale(1.05);
+}
+
+/* Trending Jobs Styles */
+
