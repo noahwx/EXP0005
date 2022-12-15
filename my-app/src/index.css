@@ -50,9 +50,13 @@ body {
 
 .footer {
   position: relative;
-  margin-top: 5vh;
-  margin-bottom: 1vh;
+  margin-top: 10vh;
   text-align: center;
+
+  height: 30vh;
+  width: 100vw;
+
+  background-color: #0D3B66;
 }
 
 .Navlink.active {
@@ -137,9 +141,13 @@ body {
   height: 40vh;
   width: 35vw;
 
-  background-color: #F95738;
+  /* background-color: #F95738; */
+}
 
-  overflow: hidden;
+.I-container-filter {
+  width: 30em;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .filter-container {
@@ -153,6 +161,9 @@ body {
 
   height: 20vh;
   width: 33vw;
+
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .J-container {
@@ -194,15 +205,58 @@ body {
 
 .job-filter-container {
   margin: auto;
-  margin-left: 2vw;
+  margin-left: 3vw;
   margin-bottom: 2vh;
 
-  height: 7vh;
-  width: 70vw;
+  height: 9vh;
+  width: 67vw;
+
+  border-radius: 5em;
 
   color: #FAF0CA;
 
+  /* background-color: #0D3B66; */
+  border: 2px dashed #0D3B66;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.filter-button {
+  position: relative;
+  float: left;
+  margin-top: 1.5vh;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  padding: 5px;
+
+  width: auto;
+  height: auto;
+
+  border-radius: 5em;
+
+  border: 2px solid #0D3B66;
+  background: none;
+
+  color: #0D3B66;
+
+  transition: transform 500ms ease, background-color 500ms ease, color 500ms ease;
+}
+
+.btn-text {
+  margin: auto;
+  font-size: clamp(1.3rem, 2vw, 1.3rem);
+  text-align: center;
+
+  font-weight: 700;
+
+  padding: 2px;
+}
+
+.filter-button:hover {
+  transform: scale(1.2);
   background-color: #0D3B66;
+  color: #FAF0CA;
 }
 
 .job-title {
@@ -213,6 +267,36 @@ body {
   font-size: clamp(1.5rem, 3vw, 1.5rem);
 
   color: #FAF0CA;
+}
+
+.job-info-container {
+  position: absolute;
+  right: 0;
+  margin-top: 1.5vh;
+
+  height: 5vh;
+  width: 25vw;
+}
+
+.job-info {
+  position: relative;
+  float: left;
+  margin-left: 2vw;
+
+  color: #ffffff;
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 300;
+}
+
+.job-description {
+  position: relative;
+  margin-left: 1vw;
+  color: #FAF0CA;
+
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 500;
+
+  word-wrap: normal;
 }
 
 .job-container:hover {
